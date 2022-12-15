@@ -1,0 +1,334 @@
+\hypertarget{class_fasta_file_1_1_f_a_s_t_a_file}{}\doxysection{Fasta\+File\+::FASTAFile Class Reference}
+\label{class_fasta_file_1_1_f_a_s_t_a_file}\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+
+
+{\ttfamily \#include $<$Fasta\+File.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a87d62920b79f16d41e5f34f44a201070}{FASTAFile}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_ad8857783b8a081a33a498965717fb58a}{file\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Default Builder. \end{DoxyCompactList}\item 
+const std\+::list$<$ \mbox{\hyperlink{class_d_n_a__sequence_1_1_sequence}{DNA\+\_\+sequence\+::\+Sequence}} $>$ \& \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a9b4f13100643d5c2bcc06b38773cf088}{get\+Sequences\+List}} ()
+\begin{DoxyCompactList}\small\item\em File name getter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a74d5b46b69f6db1775ccc0e7a097d76d}{$\sim$\+FASTAFile}} ()
+\begin{DoxyCompactList}\small\item\em Sequences List Getter-\/. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_ae80a9acc8d69d7c06a949596f4014737}{print\+Information}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a9aa3c43f79afd998bcd6f3fdc6bdec33}{export\+Legible}} ()
+\begin{DoxyCompactList}\small\item\em To print information of the File in screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a979fe9851c79f8f544e91b3f149f3df4}{is\+Sub\+Sequence}} (std\+::string sub\+\_\+sequence)
+\begin{DoxyCompactList}\small\item\em Export a legible .fa file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a52a218d4aa0c7c28d1f9ce9f47b7312a}{FASTAFile}} (std\+::string \&file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em To fin a subsequence in the Sequences. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a89ce79d00c488a539d353fbd65bd8de1}{FASTAFile}} (std\+::string \&file\+\_\+name, const int \&bin\+\_\+opcion)
+\begin{DoxyCompactList}\small\item\em Builder with the file\+\_\+name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a3ccc04e927a9efbebd94052b429b3949}{Huffman\+Encodder}} ()
+\begin{DoxyCompactList}\small\item\em Builder for a .fabin input file. \end{DoxyCompactList}\item 
+std\+::map$<$ char, int $>$ \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_ad08311f14447d6f0f52804c25b0c6982}{freq\+Mapping}} ()
+\begin{DoxyCompactList}\small\item\em To call the huffman encoder process-\/. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a02c43f7deeee71e16eda905330f6b231}{compress\+File}} (std\+::string file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em freq\+\_\+map getter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file}{FASTAFile}} \& \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_ae54ff6d7e94e3c67d50acc6751f0c6ea}{operator=}} (\mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file}{FASTAFile}} const \&obj)
+\begin{DoxyCompactList}\small\item\em To transform a .fa File to a .fabin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_ad5319e79e49996742ad957ae295166b2}{FASTAFile}} (const \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file}{FASTAFile}} \&obj)
+\item 
+std\+::string \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_ac23b068ebf3ad25f2422743518bf65d3}{prepare\+File\+Name}} (std\+::string \&file\+\_\+name, const std\+::string \&extension)
+\item 
+void \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_ac4cbbdd135038d17cb9dcfb7803b0b69}{mask\+File}} (const std\+::string \&to\+\_\+mask)
+\begin{DoxyCompactList}\small\item\em To check if a filename contains or not the extension. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a3bcee9a64e562f72c9b9cb8f6e9684fa}{mask\+File}} (const std\+::string \&to\+\_\+mask, const std\+::string \&mask)
+\item 
+void \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a6c661822f52ad394e14627322409b031}{Huffman\+Encodder}} (bool Mask)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \mbox{\hyperlink{class_d_n_a__sequence_1_1_sequence}{DNA\+\_\+sequence\+::\+Sequence}} $>$ \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a410b45916c8e840641033f7f25b9a6c6}{sequences\+\_\+list\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a52a56e140689322d56d9db3b90bbe053}{DNAsequences\+\_\+count}} \{\}
+\begin{DoxyCompactList}\small\item\em List of all sequences into a single File. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a7cedd06d7199d2839be3ac47dcb65649}{file\+\_\+name\+\_\+}}
+\begin{DoxyCompactList}\small\item\em N sequences. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_aa2eaaabc7149442517a527850896a441}{empty\+\_\+file\+\_\+}} = true
+\begin{DoxyCompactList}\small\item\em The .fa name. \end{DoxyCompactList}\item 
+std\+::list$<$ char $>$ \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a901b30afe45cdf230ccdd817fbd874b0}{valids\+\_\+}}
+\begin{DoxyCompactList}\small\item\em To check if there\textquotesingle{}s any Sequence. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_ab3ddbed090eac176bb0408dca369bea3}{file\+\_\+bases\+\_\+count}} = 0
+\begin{DoxyCompactList}\small\item\em The default list of valid bases. \end{DoxyCompactList}\item 
+std\+::map$<$ char, std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a7f08affcb8f120fff7b30c0db30a2992}{mapa\+\_\+}}
+\begin{DoxyCompactList}\small\item\em N\+\_\+bases of total valids\+\_\+ bases. \end{DoxyCompactList}\item 
+std\+::map$<$ char, int $>$ \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file_a17d03ad9a6c6598530dd9dd1fb0e5164}{mapa\+\_\+freq\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a87d62920b79f16d41e5f34f44a201070}\label{class_fasta_file_1_1_f_a_s_t_a_file_a87d62920b79f16d41e5f34f44a201070}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!FASTAFile@{FASTAFile}}
+\index{FASTAFile@{FASTAFile}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{FASTAFile()}{FASTAFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Fasta\+File\+::\+FASTAFile\+::\+FASTAFile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a74d5b46b69f6db1775ccc0e7a097d76d}\label{class_fasta_file_1_1_f_a_s_t_a_file_a74d5b46b69f6db1775ccc0e7a097d76d}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!````~FASTAFile@{$\sim$FASTAFile}}
+\index{````~FASTAFile@{$\sim$FASTAFile}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{$\sim$FASTAFile()}{~FASTAFile()}}
+{\footnotesize\ttfamily Fasta\+File\+::\+FASTAFile\+::$\sim$\+FASTAFile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sequences List Getter-\/. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a52a218d4aa0c7c28d1f9ce9f47b7312a}\label{class_fasta_file_1_1_f_a_s_t_a_file_a52a218d4aa0c7c28d1f9ce9f47b7312a}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!FASTAFile@{FASTAFile}}
+\index{FASTAFile@{FASTAFile}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{FASTAFile()}{FASTAFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Fasta\+File\+::\+FASTAFile\+::\+FASTAFile (\begin{DoxyParamCaption}\item[{std\+::string \&}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+To fin a subsequence in the Sequences. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a89ce79d00c488a539d353fbd65bd8de1}\label{class_fasta_file_1_1_f_a_s_t_a_file_a89ce79d00c488a539d353fbd65bd8de1}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!FASTAFile@{FASTAFile}}
+\index{FASTAFile@{FASTAFile}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{FASTAFile()}{FASTAFile()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Fasta\+File\+::\+FASTAFile\+::\+FASTAFile (\begin{DoxyParamCaption}\item[{std\+::string \&}]{file\+\_\+name,  }\item[{const int \&}]{bin\+\_\+opcion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Builder with the file\+\_\+name. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_ad5319e79e49996742ad957ae295166b2}\label{class_fasta_file_1_1_f_a_s_t_a_file_ad5319e79e49996742ad957ae295166b2}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!FASTAFile@{FASTAFile}}
+\index{FASTAFile@{FASTAFile}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{FASTAFile()}{FASTAFile()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Fasta\+File\+::\+FASTAFile\+::\+FASTAFile (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file}{FASTAFile}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy Builder.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a02c43f7deeee71e16eda905330f6b231}\label{class_fasta_file_1_1_f_a_s_t_a_file_a02c43f7deeee71e16eda905330f6b231}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!compressFile@{compressFile}}
+\index{compressFile@{compressFile}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{compressFile()}{compressFile()}}
+{\footnotesize\ttfamily void Fasta\+File\+::\+FASTAFile\+::compress\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+freq\+\_\+map getter. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a9aa3c43f79afd998bcd6f3fdc6bdec33}\label{class_fasta_file_1_1_f_a_s_t_a_file_a9aa3c43f79afd998bcd6f3fdc6bdec33}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!exportLegible@{exportLegible}}
+\index{exportLegible@{exportLegible}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{exportLegible()}{exportLegible()}}
+{\footnotesize\ttfamily void Fasta\+File\+::\+FASTAFile\+::export\+Legible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+To print information of the File in screen. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_ad8857783b8a081a33a498965717fb58a}\label{class_fasta_file_1_1_f_a_s_t_a_file_ad8857783b8a081a33a498965717fb58a}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!fileName@{fileName}}
+\index{fileName@{fileName}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{fileName()}{fileName()}}
+{\footnotesize\ttfamily std\+::string Fasta\+File\+::\+FASTAFile\+::file\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Builder. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_ad08311f14447d6f0f52804c25b0c6982}\label{class_fasta_file_1_1_f_a_s_t_a_file_ad08311f14447d6f0f52804c25b0c6982}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!freqMapping@{freqMapping}}
+\index{freqMapping@{freqMapping}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{freqMapping()}{freqMapping()}}
+{\footnotesize\ttfamily std\+::map$<$ char, int $>$ Fasta\+File\+::\+FASTAFile\+::freq\+Mapping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+To call the huffman encoder process-\/. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a9b4f13100643d5c2bcc06b38773cf088}\label{class_fasta_file_1_1_f_a_s_t_a_file_a9b4f13100643d5c2bcc06b38773cf088}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!getSequencesList@{getSequencesList}}
+\index{getSequencesList@{getSequencesList}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{getSequencesList()}{getSequencesList()}}
+{\footnotesize\ttfamily const std\+::list$<$ \mbox{\hyperlink{class_d_n_a__sequence_1_1_sequence}{DNA\+\_\+sequence\+::\+Sequence}} $>$ \& Fasta\+File\+::\+FASTAFile\+::get\+Sequences\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+File name getter. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a3ccc04e927a9efbebd94052b429b3949}\label{class_fasta_file_1_1_f_a_s_t_a_file_a3ccc04e927a9efbebd94052b429b3949}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!HuffmanEncodder@{HuffmanEncodder}}
+\index{HuffmanEncodder@{HuffmanEncodder}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{HuffmanEncodder()}{HuffmanEncodder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Fasta\+File\+::\+FASTAFile\+::\+Huffman\+Encodder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Builder for a .fabin input file. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a6c661822f52ad394e14627322409b031}\label{class_fasta_file_1_1_f_a_s_t_a_file_a6c661822f52ad394e14627322409b031}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!HuffmanEncodder@{HuffmanEncodder}}
+\index{HuffmanEncodder@{HuffmanEncodder}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{HuffmanEncodder()}{HuffmanEncodder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Fasta\+File\+::\+FASTAFile\+::\+Huffman\+Encodder (\begin{DoxyParamCaption}\item[{bool}]{Mask }\end{DoxyParamCaption})}
+
+To call the \mbox{\hyperlink{class_huffman}{Huffman}} Encoder but with auto mask replacement. 
+\begin{DoxyParams}{Parameters}
+{\em Mask} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a979fe9851c79f8f544e91b3f149f3df4}\label{class_fasta_file_1_1_f_a_s_t_a_file_a979fe9851c79f8f544e91b3f149f3df4}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!isSubSequence@{isSubSequence}}
+\index{isSubSequence@{isSubSequence}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{isSubSequence()}{isSubSequence()}}
+{\footnotesize\ttfamily int Fasta\+File\+::\+FASTAFile\+::is\+Sub\+Sequence (\begin{DoxyParamCaption}\item[{std\+::string}]{sub\+\_\+sequence }\end{DoxyParamCaption})}
+
+
+
+Export a legible .fa file. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_ac4cbbdd135038d17cb9dcfb7803b0b69}\label{class_fasta_file_1_1_f_a_s_t_a_file_ac4cbbdd135038d17cb9dcfb7803b0b69}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!maskFile@{maskFile}}
+\index{maskFile@{maskFile}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{maskFile()}{maskFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Fasta\+File\+::\+FASTAFile\+::mask\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{to\+\_\+mask }\end{DoxyParamCaption})}
+
+
+
+To check if a filename contains or not the extension. 
+
+To change every subsequence (To mask) to the char \char`\"{}\+X\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+{\em to\+\_\+mask} & The subsequence to mask for example\+: AGGT in AFGT$\ast$\+AGGT$\ast$\+AAT This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a3bcee9a64e562f72c9b9cb8f6e9684fa}\label{class_fasta_file_1_1_f_a_s_t_a_file_a3bcee9a64e562f72c9b9cb8f6e9684fa}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!maskFile@{maskFile}}
+\index{maskFile@{maskFile}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{maskFile()}{maskFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Fasta\+File\+::\+FASTAFile\+::mask\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{to\+\_\+mask,  }\item[{const std\+::string \&}]{mask }\end{DoxyParamCaption})}
+
+To change every subsequence to the other subsequence. 
+\begin{DoxyParams}{Parameters}
+{\em to\+\_\+mask} & The subsequence to replace. \\
+\hline
+{\em mask} & The replacement subsequence. This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_ae54ff6d7e94e3c67d50acc6751f0c6ea}\label{class_fasta_file_1_1_f_a_s_t_a_file_ae54ff6d7e94e3c67d50acc6751f0c6ea}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!operator=@{operator=}}
+\index{operator=@{operator=}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file}{FASTAFile}} \& Fasta\+File\+::\+FASTAFile\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fasta_file_1_1_f_a_s_t_a_file}{FASTAFile}} const \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+To transform a .fa File to a .fabin. 
+
+Operator =\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_ac23b068ebf3ad25f2422743518bf65d3}\label{class_fasta_file_1_1_f_a_s_t_a_file_ac23b068ebf3ad25f2422743518bf65d3}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!prepareFileName@{prepareFileName}}
+\index{prepareFileName@{prepareFileName}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{prepareFileName()}{prepareFileName()}}
+{\footnotesize\ttfamily std\+::string Fasta\+File\+::\+FASTAFile\+::prepare\+File\+Name (\begin{DoxyParamCaption}\item[{std\+::string \&}]{file\+\_\+name,  }\item[{const std\+::string \&}]{extension }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_ae80a9acc8d69d7c06a949596f4014737}\label{class_fasta_file_1_1_f_a_s_t_a_file_ae80a9acc8d69d7c06a949596f4014737}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!printInformation@{printInformation}}
+\index{printInformation@{printInformation}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{printInformation()}{printInformation()}}
+{\footnotesize\ttfamily void Fasta\+File\+::\+FASTAFile\+::print\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a52a56e140689322d56d9db3b90bbe053}\label{class_fasta_file_1_1_f_a_s_t_a_file_a52a56e140689322d56d9db3b90bbe053}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!DNAsequences\_count@{DNAsequences\_count}}
+\index{DNAsequences\_count@{DNAsequences\_count}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{DNAsequences\_count}{DNAsequences\_count}}
+{\footnotesize\ttfamily int Fasta\+File\+::\+FASTAFile\+::\+DNAsequences\+\_\+count \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List of all sequences into a single File. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_aa2eaaabc7149442517a527850896a441}\label{class_fasta_file_1_1_f_a_s_t_a_file_aa2eaaabc7149442517a527850896a441}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!empty\_file\_@{empty\_file\_}}
+\index{empty\_file\_@{empty\_file\_}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{empty\_file\_}{empty\_file\_}}
+{\footnotesize\ttfamily bool Fasta\+File\+::\+FASTAFile\+::empty\+\_\+file\+\_\+ = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The .fa name. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_ab3ddbed090eac176bb0408dca369bea3}\label{class_fasta_file_1_1_f_a_s_t_a_file_ab3ddbed090eac176bb0408dca369bea3}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!file\_bases\_count@{file\_bases\_count}}
+\index{file\_bases\_count@{file\_bases\_count}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{file\_bases\_count}{file\_bases\_count}}
+{\footnotesize\ttfamily int Fasta\+File\+::\+FASTAFile\+::file\+\_\+bases\+\_\+count = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The default list of valid bases. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a7cedd06d7199d2839be3ac47dcb65649}\label{class_fasta_file_1_1_f_a_s_t_a_file_a7cedd06d7199d2839be3ac47dcb65649}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!file\_name\_@{file\_name\_}}
+\index{file\_name\_@{file\_name\_}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{file\_name\_}{file\_name\_}}
+{\footnotesize\ttfamily std\+::string Fasta\+File\+::\+FASTAFile\+::file\+\_\+name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+N sequences. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a7f08affcb8f120fff7b30c0db30a2992}\label{class_fasta_file_1_1_f_a_s_t_a_file_a7f08affcb8f120fff7b30c0db30a2992}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!mapa\_@{mapa\_}}
+\index{mapa\_@{mapa\_}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{mapa\_}{mapa\_}}
+{\footnotesize\ttfamily std\+::map$<$char, std\+::vector$<$int$>$ $>$ Fasta\+File\+::\+FASTAFile\+::mapa\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+N\+\_\+bases of total valids\+\_\+ bases. 
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a17d03ad9a6c6598530dd9dd1fb0e5164}\label{class_fasta_file_1_1_f_a_s_t_a_file_a17d03ad9a6c6598530dd9dd1fb0e5164}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!mapa\_freq\_@{mapa\_freq\_}}
+\index{mapa\_freq\_@{mapa\_freq\_}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{mapa\_freq\_}{mapa\_freq\_}}
+{\footnotesize\ttfamily std\+::map$<$char, int$>$ Fasta\+File\+::\+FASTAFile\+::mapa\+\_\+freq\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a410b45916c8e840641033f7f25b9a6c6}\label{class_fasta_file_1_1_f_a_s_t_a_file_a410b45916c8e840641033f7f25b9a6c6}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!sequences\_list\_@{sequences\_list\_}}
+\index{sequences\_list\_@{sequences\_list\_}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{sequences\_list\_}{sequences\_list\_}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_d_n_a__sequence_1_1_sequence}{DNA\+\_\+sequence\+::\+Sequence}}$>$ Fasta\+File\+::\+FASTAFile\+::sequences\+\_\+list\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_fasta_file_1_1_f_a_s_t_a_file_a901b30afe45cdf230ccdd817fbd874b0}\label{class_fasta_file_1_1_f_a_s_t_a_file_a901b30afe45cdf230ccdd817fbd874b0}} 
+\index{FastaFile::FASTAFile@{FastaFile::FASTAFile}!valids\_@{valids\_}}
+\index{valids\_@{valids\_}!FastaFile::FASTAFile@{FastaFile::FASTAFile}}
+\doxysubsubsection{\texorpdfstring{valids\_}{valids\_}}
+{\footnotesize\ttfamily std\+::list$<$char$>$ Fasta\+File\+::\+FASTAFile\+::valids\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{\textcolor{charliteral}{'A'}, \textcolor{charliteral}{'C'}, \textcolor{charliteral}{'G'}, \textcolor{charliteral}{'T'}, \textcolor{charliteral}{'U'}, \textcolor{charliteral}{'R'}, \textcolor{charliteral}{'Y'}, \textcolor{charliteral}{'K'}, \textcolor{charliteral}{'M'}, \textcolor{charliteral}{'S'}, \textcolor{charliteral}{'W'}, \textcolor{charliteral}{'B'}, \textcolor{charliteral}{'D'}, \textcolor{charliteral}{'H'}, \textcolor{charliteral}{'V'}, \textcolor{charliteral}{'N'},}
+\DoxyCodeLine{                                        \textcolor{charliteral}{'X'}, \textcolor{charliteral}{'-\/'}, \textcolor{charliteral}{'\(\backslash\)r'}\}}
+
+\end{DoxyCode}
+
+
+To check if there\textquotesingle{}s any Sequence. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_fasta_file_8h}{Fasta\+File.\+h}}\item 
+\mbox{\hyperlink{_fasta_file_8cpp}{Fasta\+File.\+cpp}}\end{DoxyCompactItemize}
